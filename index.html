@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IARA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Anton&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/imgs/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/imgs/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/imgs/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/imgs/favicon/site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+  <header class="header">
+    <div class="topbar">
+      <div class="container">
+        <div class="left">
+          <div class="logo-container">
+            <img src="/imgs/logo/logo_original.png" alt="IARA Logo" class="site-logo">
+            <div class="logo">IARA</div>
+          </div>
+          <nav class="menu">
+            <a href="#produtos">Loja</a>
+            <a href="#alem">Comunidade</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#footer">Suporte</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="navbar" id="navbar">
+      <div class="container">
+        <nav class="menu-sec">
+          <a href="#explorar">Explorar</a>
+          <a href="#produtos">Recomendações</a>
+          <a href="#ofertas">Ofertas</a>
+          <nav class="dropdown">
+            Categorias
+            <i class="fa-solid fa-chevron-down"></i>
+            <ul class="dropdown-menu">
+              <li><a href="#categorias">Ação</a></li>
+              <li><a href="#categorias">Aventura</a></li>
+              <li><a href="#categorias">RPG</a></li>
+              <li><a href="#categorias">Estratégia</a></li>
+            </ul>
+          </nav>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Procurar">
+          </div>
+          <div class="navbar-user">
+            <a href="/formulario/login.html" class="btn-login">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              Entrar
+            </a>
+            <a href="/formulario/login.html" class="btn-criar-conta">
+              <i class="fa-solid fa-user-plus"></i>
+              Criar conta
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <script src="/javascript/header.js"></script>
+  </header>
+  <section class="carousel" id="explorar">
+    <div class="carousel-wrapper">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="slide">
+            <a href="/games/compra.html">
+              <img src="/imgs/carrossel/chroma.jpg" alt="Chroma">
+            </a>
+          </div>
+          <div class="slide">
+            <a href="/games/compra.html">
+              <img src="/imgs/carrossel/dandara.jpg" alt="Dandara">
+            </a>
+          </div>
+          <div class="slide">
+            <a href="/games/compra.html">
+              <img src="/imgs/carrossel/momodora.jpg" alt="Momodora">
+            </a>
+          </div>
+          <div class="slide">
+            <a href="/games/compra.html">
+              <img src="/imgs/carrossel/mullet.jpg" alt="Mullet">
+            </a>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button class="indicator active" data-slide="1" aria-label="Ir para Chroma"></button>
+          <button class="indicator" data-slide="2" aria-label="Ir para Dandara"></button>
+          <button class="indicator" data-slide="3" aria-label="Ir para Momodora"></button>
+          <button class="indicator" data-slide="4" aria-label="Ir para Mullet"></button>
+        </div>
+      </div>
+      <button class="prev" aria-label="Slide anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="next" aria-label="Próximo slide">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+    <script src="/javascript/carrossel.js"></script>
+  </section>
+  <section class="highlights" id="highlights">
+    <div class="highlights-wrapper">
+      <div class="card-large">
+        <a href="/games/compra.html">
+          <img src="/imgs/destaques/bravery.jpg" alt="">
+          <div class="card-title">Evento de No Place For Bravery</div>
+        </a>
+      </div>
+      <div class="card-side">
+        <div class="card-small">
+          <a href="/games/compra.html">
+            <div class="badge-group">
+              <div class="badge">Oferta da semana</div>
+              <div class="discount">30% off</div>
+            </div>
+            <img src="/imgs/destaques/9kings.jpg" alt="">
+          </a>
+        </div>
+        <div class="card-small">
+          <a href="/games/compra.html">
+            <img src="/imgs/destaques/enigma.jpg" alt="">
+            <div class="card-title small">Apenas hoje!</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="disclaimer" id="sobre">
+    <div class="disclaimer-conteudo">
+      <h1>O maior catálogo de<br>jogos brasileiros</h1>
+      <p>Descubra a <strong>criatividade da indústria nacional</strong> com a IARA.</p>
+      <p>Reunimos jogos <strong>desenvolvidos por estúdios brasileiros</strong>, valorizando talentos locais e fortalecendo o cenário de games no país. <strong>Explore experiências únicas</strong>, com identidade e qualidade</p>
+    </div>
+    <div class="jogos-disclaimer">
+      <img src="/imgs/disclaimer/UX/Rectangle 306.png" width="160px" alt="">
+      <img src="/imgs/disclaimer/UX/Rectangle 305.png" width="180px" alt="">
+      <img src="/imgs/disclaimer/UX/Rectangle 303.png" width="200px" alt="">
+      <img src="/imgs/disclaimer/UX/Rectangle 304.png" width="180px" alt="">
+      <img src="/imgs/disclaimer/UX/Rectangle 307.png" width="160px" alt="">
+    </div>
+  </section>
+  <section class="products-section" id="produtos">
+    <section class="display-jogos">
+      <div class="products-block">
+        <div class="title-row">
+          <div class="title-text">
+            <h2>Sugestões</h2>
+            <p>Jogos para você conhecer</p>
+          </div>
+          <a href="#" class="btn-ver-mais">
+            Ver mais
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Sugestões/UX/odallus.png" alt="">
+              <div class="product-info">
+                <span>Odallus the Dark Call</span>
+                <span class="price">R$ 10,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Sugestões/UX/toren.png" alt="">
+              <div class="product-info">
+                <span>Toren</span>
+                <span class="price">R$ 20,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Sugestões/UX/unsighted.png" alt="">
+              <div class="product-info">
+                <span>Unsighted</span>
+                <span class="price">R$ 20,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Sugestões/UX/horizon.png" alt="">
+              <div class="product-info">
+                <span>Horizon Chase Turbo</span>
+                <span class="price">R$ 50,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Sugestões/UX/arida.png" alt="">
+              <div class="product-info">
+                <span>ÁRIDA</span>
+                <span class="price">R$ 25,00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="em-alta">
+      <div class="em-alta-textos">
+        <i class="fa-solid fa-fire"></i>
+        <h1>Em Alta</h1>
+        <p>Os jogos mais populares<br>do momento</p>
+        <a href="#">
+          Ver mais
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+      <div class="product-card">
+        <a href="/games/compra.html">
+          <div class="product-image">
+            <img class="imagem-jogo" src="/imgs/produtos/em alta/aila.png" alt="A.I.L.A">
+            <img class="gif-jogo" src="/gifs/aila.gif" alt="">
+          </div>
+          <div class="product-info">
+            <span>A.I.L.A</span>
+            <span class="price">R$ 80,00</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <section class="display-jogos">
+      <div class="products-block">
+        <div class="title-row">
+          <div class="title-text">
+            <h2>Adicionados Recentemente</h2>
+            <p>Explore o que você não pode perder</p>
+          </div>
+          <a href="#" class="btn-ver-mais">
+            Ver mais
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Adicionados Recentemente/1 the eternal cylinder.png" alt="">
+              <div class="product-info">
+                <span>The Eternal Cylinder</span>
+                <span class="price">R$ 22,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Adicionados Recentemente/2 relic.png" alt="">
+              <div class="product-info">
+                <span>Relic Hunters Legend</span>
+                <span class="price">R$ 17,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Adicionados Recentemente/3 unsighted.png" alt="">
+              <div class="product-info">
+                <span>Unsighted</span>
+                <span class="price">R$ 20,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Adicionados Recentemente/fobia.png" alt="">
+              <div class="product-info">
+                <span>Fobia – St. Dinfna Hotel</span>
+                <span class="price">R$ 50,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Adicionados Recentemente/pocket.png" alt="">
+              <div class="product-info">
+                <span>Pocket Bravery</span>
+                <span class="price">R$ 50,00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="products-block">
+        <div class="title-row">
+          <div class="title-text">
+            <h2>Mais Comprados</h2>
+            <p>Os favoritos da comunidade</p>
+          </div>
+          <a href="#" class="btn-ver-mais">
+            Ver mais
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Sugestões/UX/odallus.png" alt="">
+              <div class="product-info">
+                <span>Odallus the Dark Call</span>
+                <span class="price">R$ 10,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Mais Comprados/2 Knights.png" alt="">
+              <div class="product-info">
+                <span>Knights of Pen & Paper 2</span>
+                <span class="price">R$ 7,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Mais Comprados/3 Dodgeball.png" alt="">
+              <div class="product-info">
+                <span>Dodgeball Academia</span>
+                <span class="price">R$ 70,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Mais Comprados/dandy.jpg" alt="">
+              <div class="product-info">
+                <span>Dandy Ace</span>
+                <span class="price">R$ 30,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/Mais Comprados/kaze.png" alt="">
+              <div class="product-info">
+                <span>Kaze and the Wild Masks</span>
+                <span class="price">R$ 50,00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="products-block">
+        <div class="title-row">
+          <div class="title-text">
+            <h2>Melhores Avaliados</h2>
+            <p>Jogos que Conquistaram os Jogadores</p>
+          </div>
+          <a href="#" class="btn-ver-mais">
+            Ver mais
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/melhores/ux/kukos.png" alt="">
+              <div class="product-info">
+                <span>Kukoos Lost Pets</span>
+                <span class="price">R$ 60,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/melhores/UX/Rectangle 300-1.png" alt="">
+              <div class="product-info">
+                <span>Toren</span>
+                <span class="price">R$ 20,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/melhores/UX/Rectangle 301.png" alt="">
+              <div class="product-info">
+                <span>Dandara Trials Of Fear</span>
+                <span class="price">R$ 10,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/melhores/UX/mullet.jpg" alt="">
+              <div class="product-info">
+                <span>Mullet MadJack</span>
+                <span class="price">R$ 50,00</span>
+              </div>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="/games/compra.html">
+              <img src="/imgs/produtos/melhores/UX/midnight.png" alt="">
+              <div class="product-info">
+                <span>The Midnight Walk</span>
+                <span class="price">R$ 100,00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="categories-section" id="categorias">
+    <div class="categories-header">
+      <h2>Navegue pelas Categorias</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card">
+        <img src="/imgs/categorias/UX/FPS.png" alt="Ação">
+        <div class="category-overlay">
+          <h3>FPS</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/categorias/UX/acao.png" alt="Ação">
+        <div class="category-overlay">
+          <h3>Ação</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/categorias/UX/aventura.png" alt="Aventura">
+        <div class="category-overlay">
+          <h3>Aventura</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="/imgs/categorias/UX/RPG.png" alt="RPG">
+        <div class="category-overlay">
+          <h3>RPG</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ofertas-section" id="ofertas">
+    <div class="ofertas-block">
+      <div class="ofertas-title-row">
+        <h2>Ofertas</h2>
+        <p>Descontos que estão esperando por você</p>
+      </div>
+      <div class="ofertas-grid">
+        <div class="ofertas-card">
+          <a href="/games/compra.html">
+            <img src="/imgs/produtos/ofertas/UX/Rectangle 300.png" alt="">
+            <div class="ofertas-info">
+              <div>
+                <span>Hazel Sky</span>
+                <p>Economize 40%</p>
+              </div>
+              <div class="pricing-oferta">
+                <span class="ofertas-price-old">R$ 75,00</span>
+                <span class="ofertas-price">R$ 45,00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="ofertas-card">
+          <a href="/games/compra.html">
+            <img src="/imgs/produtos/ofertas/UX/Rectangle 300-1.png" alt="">
+            <div class="ofertas-info">
+              <div>
+                <span>Mark Of The Deep</span>
+                <p>Economize 50%</p>
+              </div>
+              <div class="pricing-oferta">
+                <span class="ofertas-price-old">R$ 75,00</span>
+                <span class="ofertas-price">R$ 45,00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="ofertas-card">
+          <a href="/games/compra.html">
+            <img src="/imgs/produtos/ofertas/UX/Rectangle 300-2.png" alt="">
+            <div class="ofertas-info">
+              <div>
+                <span>Toggles</span>
+                <p>Economize 75%</p>
+              </div>
+              <div class="pricing-oferta">
+                <span class="ofertas-price-old">R$ 75,00</span>
+                <span class="ofertas-price">R$ 45,00</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="em-alta">
+    <div class="product-card">
+      <a href="/games/compra.html">
+        <div class="product-image">
+          <img class="imagem-jogo" src="/imgs/produtos/gratuitos/relic.png" alt="Relic Hunters Zero: Remix">
+          <img class="gif-jogo" src="/gifs/relic.gif" alt="">
+        </div>
+        <div class="product-info">
+          <span>Relic Hunters Zero: Remix</span>
+          <span class="price">Gratuito</span>
+        </div>
+      </a>
+    </div>
+    <div class="em-alta-textos">
+      <h1>Gratuitos</h1>
+      <p>Aproveite jogos incríveis sem gastar nada</p>
+      <a href="#">
+        Ver mais
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+  <section class="alem-do-jogo" id="alem">
+    <div class="alem-do-jogo-section">
+      <div class="alem-do-jogo-content">
+        <img src="/imgs/destaques/9kings.jpg" alt="alem-do-jogo-img">
+      </div>
+      <div class="alem-do-jogo-texto">
+        <h1>Além do Jogo</h1>
+        <p>Cada jogo carrega uma história que vai além da tela. Veja como ideias ganham vida através de processos criativos, testes e desafios reais enfrentados durante o desenvolvimento.</p>
+        <p>Na IARA, você encontra essas experiências já prontas para serem exploradas com toda a qualidade e originalidade que tornam cada título único.</p>
+        <a class="btn-cadastro" href="/formulario/criar conta.html">Faça seu cadastro</a>
+      </div>
+    </div>
+  </section>
+  <section class="display-jogos">
+    <div class="products-block">
+      <div class="title-row">
+        <div class="title-text">
+          <h2>Coleções</h2>
+          <p>Explore lista de jogos selecionados especialmente para você</p>
+        </div>
+        <a href="#" class="btn-ver-mais">
+          Ver mais
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+      <div class="colecoes-grid">
+        <div class="colecoes-card">
+          <img src="/imgs/produtos/coleções/UX/Rectangle 354.png" alt="Explore mundos enormes">
+          <div class="colecoes-card-info">
+            <h3>Explore mundos enormes</h3>
+            <p>Descubra universos vastos e aventure-se em jornadas inesquecíveis</p>
+            <a href="#" class="btn-colecao">Veja a lista</a>
+          </div>
+        </div>
+        <div class="colecoes-card">
+          <img src="/imgs/produtos/coleções/UX/Rectangle 355.png" alt="Para Jogar Offline">
+          <div class="colecoes-card-info">
+            <h3>Para Jogar Offline</h3>
+            <p>Aproveite grandes experiências sem precisar de conexão com a internet</p>
+            <a href="#" class="btn-colecao">Veja a lista</a>
+          </div>
+        </div>
+        <div class="colecoes-card">
+          <img src="/imgs/produtos/coleções/UX/Rectangle 356.png" alt="Experiências relaxantes">
+          <div class="colecoes-card-info">
+            <h3>Experiências relaxantes</h3>
+            <p>Desacelere e aproveite experiências tranquilas no seu próprio ritmo</p>
+            <a href="#" class="btn-colecao">Veja a lista</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container" id="footer">
+      <div class="footer-brand">
+        <div class="footer-brand-top">
+          <img src="/imgs/logo/logo_original.png" alt="IARA Logo">
+          <h3>IARA</h3>
+        </div>
+        <p class="footer-brand-description">
+          Sua plataforma de jogos independentes brasileiros.
+          <br>
+          Descubra, jogue e apoie desenvolvedores locais.
+        </p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Sobre Iara Games</h4>
+          <ul>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Nossa Equipe</a></li>
+            <li><a href="#">Parceiros</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Tickets</a></li>
+          </ul>
+        </div>
+        <div class="footer-column coluna-seguranca">
+          <h4 class="no-wrap">Segurança e Privacidade</h4>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#">Termos de Serviço</a></li>
+            <li><a href="#">Classificação Etária</a></li>
+            <li><a href="#">Licenças</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-twitch"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

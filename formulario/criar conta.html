@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta – IARA</title>
+  <link rel="icon" type="image/png" href="../imgs/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="../imgs/favicon/favicon.svg">
+  <link rel="shortcut icon" href="../imgs/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../imgs/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/formulario/style.css">
+</head>
+<body>
+  <a href="../Index.html" class="voltar">Voltar</a>
+  <div class="form-card">
+    <div class="logo-area">
+      <img src="../imgs/logo/logo_original.png" alt="IARA Logo">
+      <span>IARA</span>
+    </div>
+    <p class="form-subtitle">Cadastre-se agora e desbloqueie um universo de jogos</p>
+    <form action="preferencias.html" method="get" id="cadastro-form">
+      <div class="input-field">
+        <input type="text" id="nickname" name="nickname" placeholder="Nickname" required>
+        <i class="fa-regular fa-user field-icon"></i>
+      </div>
+      <div class="input-field">
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        <i class="fa-regular fa-envelope field-icon"></i>
+      </div>
+      <div class="input-field">
+        <input type="password" id="senha" name="senha" placeholder="Senha" minlength="6" required>
+        <i class="fa-regular fa-eye-slash field-icon toggle-password" data-target="senha" title="Mostrar senha"></i>
+      </div>
+      <div class="input-field">
+        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirmar senha" minlength="6" required>
+        <i class="fa-regular fa-eye-slash field-icon toggle-password" data-target="confirmar-senha" title="Mostrar senha"></i>
+      </div>
+      <button type="submit" class="btn-primary">Próximo passo</button>
+    </form>
+    <p class="form-footer">
+      <span>Já possui uma conta?</span>
+      <a href="login.html">Entrar</a>
+    </p>
+  </div>
+  <script src="/javascript/cadastro.js"></script>
+</body>
+</html>

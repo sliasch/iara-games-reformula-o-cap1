@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-escuro: #151D27;
+  --azul-marinho: #0A2239;
+  --azul-campo: #151D27;
+  --laranja: #ff7c2a;
+  --branco: #fefefe;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--azul-marinho);
+  background-image: url("../imgs/background/fundo_formulario.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gabarito", "Arial", sans-serif;
+  font-size: 17px;
+}
+
+.voltar {
+  position: fixed;
+  top: 28px;
+  right: 36px;
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.voltar:hover {
+  opacity: 0.75;
+  transform: translateY(-1px);
+}
+
+.form-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 48px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.logo-area img {
+  height: 60px;
+}
+
+.logo-area span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--laranja);
+  font-family: "Anton SC", "Arial", sans-serif;
+  letter-spacing: 2px;
+}
+
+.form-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-field {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 15px 46px 15px 20px;
+  background-color: var(--azul-campo);
+  border: 2px solid white;
+  border-radius: 100px;
+  color: var(--branco);
+  font-family: "Gabarito", "Arial", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field input:focus {
+  border-color: var(--laranja);
+  background-color: #182431;
+  box-shadow: 0 0 0 2px rgba(255, 124, 42, 0.08);
+}
+
+.field-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: white;
+  pointer-events: none;
+}
+
+.toggle-password {
+  pointer-events: auto;
+  cursor: pointer;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.toggle-password:hover {
+  color: var(--laranja);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.toggle-password:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.forgot {
+  display: block;
+  width: 300px;
+  margin: -2px auto 0;
+  color: var(--branco);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.forgot:hover {
+  color: var(--laranja);
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  width: 300px;
+  margin: 12px auto 0;
+  padding: 15px;
+  background: var(--laranja);
+  border: none;
+  border-radius: 100px;
+  color: var(--branco);
+  font-family: "Gabarito", "Arial", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.form-footer {
+  margin-top: 22px;
+  color: white;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.form-footer span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-footer a {
+  display: inline-block;
+  color: var(--laranja);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.form-footer a:hover {
+  border-color: var(--laranja);
+  transform: translateY(-1px);
+  opacity: 0.85;
+}
+
+.input-field input.input-error {
+  border-color: #ff4d4d;
+}
+
+.input-field input.input-success {
+  border-color: #4fd16f;
+}
+
+@media (max-width: 500px) {
+  .form-card {
+    padding: 40px 25px 30px;
+  }
+  .voltar {
+    top: 20px;
+    right: 20px;
+  }
+  .logo-area span {
+    font-size: 2.8rem;
+  }
+  .input-field,
+  .btn-primary,
+  .forgot {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --azul-escuro: #151D27;
+  --azul-marinho: #0A2239;
+  --laranja: #ff7c2a;
+  --branco: #fefefe;
+  --verde-escuro: #061B1F;
+  --cinza: #737171
+}
+body {
+  background-color: var(--azul-marinho);
+  background-image: url(/imgs/background/fundo.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > * {
+  width: 90%;
+  max-width: 1400px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  section > * {
+    width: 95%;
+  }
+}

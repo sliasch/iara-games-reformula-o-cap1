@@ -1,0 +1,147 @@
+.ofertas-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.display-ofertas {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.ofertas-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ofertas-title-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.ofertas-title-row h2 {
+  color: var(--laranja);
+  font-size: 2rem;
+  font-family: "Gabarito", sans-serif;
+  font-weight: 400;
+}
+
+.ofertas-title-row p {
+  color: var(--laranja);
+  font-family: "Gabarito", sans-serif;
+  font-size: 1rem;
+}
+
+.ofertas-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.ofertas-card {
+  display: flex;
+  height: auto;
+  background-color: #151D27;
+  overflow: hidden;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 15px;
+  flex-direction: column;
+  border: 5px solid var(--laranja);
+  transition: transform 0.25s ease, border 0.25s ease, background 0.25s ease;
+}
+
+.ofertas-card:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(-30deg, rgba(255, 140, 0, 0.25) 0%, transparent 70%);
+}
+
+.ofertas-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.ofertas-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  color: var(--branco);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Gabarito", sans-serif;
+  gap: 30px;
+  transition: color 0.2s ease;
+}
+
+.pricing-oferta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ofertas-info p {
+  color: var(--laranja);
+  font-weight: 300;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+}
+
+.ofertas-price-old {
+  color: var(--cinza);
+  font-weight: 200;
+  text-decoration: line-through;
+}
+
+.ofertas-info span:first-child {
+  transition: color 0.2s ease;
+}
+
+.ofertas-price {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Gabarito", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.ofertas-card:hover .ofertas-info {
+  color: var(--laranja);
+}
+
+.ofertas-card:hover .ofertas-info p {
+  color: var(--branco);
+}
+
+.ofertas-card:hover .ofertas-price {
+  color: var(--laranja);
+}
+
+@media (max-width: 768px) {
+  .ofertas-section {
+    padding: 30px 0;
+  }
+  .ofertas-block {
+    width: 95%;
+  }
+  .ofertas-grid {
+    grid-template-columns: 1fr;
+  }
+}

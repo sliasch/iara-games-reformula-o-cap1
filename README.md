@@ -1,1 +1,0 @@
-# iara-games-reformula-o-cap1

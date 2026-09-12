@@ -8,6 +8,7 @@ O projeto começou como uma interface estática construída com **HTML e CSS** e
 
 ## 👥 Integrantes
 
+* Isabela Silva Santos 
 * Leonardo Franco Arakaki
 * Murilo de Melo Sousa
 * Samuel Liasch Alves

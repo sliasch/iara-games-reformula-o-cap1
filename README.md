@@ -363,9 +363,7 @@ Quando o projeto estiver publicado, ele poderá ser acessado diretamente pelo Gi
 
 **Link do projeto publicado:**
 
-> ⚠️ Inserir aqui o link atualizado do GitHub Pages após a publicação.
-
----
+https://iaragames-two.vercel.app/
 
 # 🧪 Como testar as principais funcionalidades
 

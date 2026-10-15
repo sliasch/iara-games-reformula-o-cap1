@@ -357,9 +357,9 @@ Para uma experiência mais adequada durante o desenvolvimento, recomenda-se util
 
 ---
 
-## Opção 2 — GitHub Pages
+## Opção 2 — Vercel
 
-Quando o projeto estiver publicado, ele poderá ser acessado diretamente pelo GitHub Pages.
+Quando o projeto estiver publicado, ele poderá ser acessado diretamente pelo Vercel.
 
 **Link do projeto publicado:**
 
